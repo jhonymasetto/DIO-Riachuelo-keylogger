@@ -1,0 +1,46 @@
+                                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ python key-gen.py
+Chave 'secret.key' gerada com sucesso!
+                                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ ls secret.key 
+secret.key
+                                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ cat secret.key 
+QDXYqTpo0a8iLL83VfPeBeZ5QweVvu-N0GDq-o-Z08M=                                                                                                                                                                                       
+
+┌──(kali㉿kali)-[~]
+└─$ python Crypt.py 
+[-] Arquivo teste.txt foi sequestrado (cifrado).
+[-] Arquivo passwd.txt foi sequestrado (cifrado).
+[-] Arquivo users.txt foi sequestrado (cifrado).
+
+⚠️ Todos os arquivos no diretório de teste foram cifrados.
+                                                                                                                                                                                      
+┌──(kali㉿kali)-[~]
+└─$ ls alvo       
+passwd.txt  teste.txt  users.txt
+                                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ cat alvo/users.txt 
+gAAAAABpxC_fFrxtXe_fjrY-Wy6P7NPcVnEudAh0wSvAEK82uPULk9RfaimJ1FuwneLqXsAWD3S1B2rCsNU6LilaiiChNerJrAEhiccuEVxdGvCxs_LKd379tapP7mWunOxQCisWwNIbdR9xHS_ru1nsEAyXSKxtgQ7ZaMA9Jha5a1PIKJZ578s=                                                                                                                                                                                       
+
+┌──(kali㉿kali)-[~]
+└─$ python Decrypt.py 
+[+] Arquivo teste.txt recuperado com sucesso!
+[+] Arquivo passwd.txt recuperado com sucesso!
+[+] Arquivo users.txt recuperado com sucesso!
+                                                                                                                                                                                       
+┌──(kali㉿kali)-[~]
+└─$ cat alvo/users.txt 
+Administrator
+Admin
+Guest
+User
+Backup
+Operator
+Arcserve 
+Scanner 
+msfadmin
