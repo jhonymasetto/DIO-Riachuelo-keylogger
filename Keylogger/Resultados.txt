@@ -1,0 +1,3 @@
+jhony@nautilus:~/code/DIO-Riachuelo-keylogger$  source /home/jhony/code/DIO-Riachuelo-keylogger/.venv/bin/activate
+(.venv) jhony@nautilus:~/code/DIO-Riachuelo-keylogger$ /home/jhony/code/DIO-Riachuelo-keylogger/.venv/bin/python /home/jhony/code/DIO-Riachuelo-keylogger/Keylogger/keylogger.py
+Email enviado com sucesso!
